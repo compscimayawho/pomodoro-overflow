@@ -15,9 +15,29 @@
 
 </head>
 <body>
+    <section>
+        <div class="container">
+            <h1>Pomodoro Timer</h1>
+            <div class="panel">
+                <button id="work">Work</button>
+                <button id="break">Break</button>
+            </div>
+        </div>
 
+       <div class="timer">
+            <div class="square">
+                <p id="minutes">25</p>
+                <p>:</p>
+                <p id="seconds">00</p>
+            </div>
+       </div>
 
-    
+       <div class="controls">
+            <button id="start" onclick="start()">Start</button>
+            <button id="reset">Reset</button>
+       </div>
+    </section>
+
     <!-- JavaScript -->
     <script src="script.js"></script>
 </body>
