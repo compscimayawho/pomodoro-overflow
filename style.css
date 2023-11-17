@@ -21,6 +21,7 @@ html, body {
     width: 100vw;
     /* background-color: var(--overflow-red); */
     font-size: 1.6rem;
+    font-family: 'Open Sans', sans-serif;
 }
 
 h1 {
@@ -28,3 +29,98 @@ h1 {
     font-size: 3.1rem;
 }
 
+section {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    /* width: min(42.5rem, 100vh); */
+    height: 100vh;
+    /* padding-inline: 2rem; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.panel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    width: 20rem;
+    margin: 5rem 2rem 2rem;
+    padding: 1rem;
+}
+
+.panel p { 
+    opacity: 0.8;
+    transition: 1s ease-in-out;
+}
+
+.panel p.active {
+    opacity: 1;
+    color: purple;  
+}
+
+
+.timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
+}
+
+.square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 20rem;
+    height: 20rem;
+    /* border-radius: to be set */
+    /* background-color: to be set */
+}
+
+.square::before {
+    content: '';
+    position: absolute;
+    width: .5rem;
+    height: .5rem;
+    /* border-radius: to be set */
+    /* background-color: to be set; */
+}
+
+
+.time {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.time p {
+    font-size: 5rem;
+}
+
+.time p:nth-of-type(2) {
+    position: relative;
+    top: -1.4rem;
+    margin: 1rem 0;
+}
+
+.controls {
+    margin: 3rem 0;
+}
+
+.controls button {
+    /* add styles here */
+    cursor: pointer;
+}
+
+.controls button#reset {
+    display: none;
+}
