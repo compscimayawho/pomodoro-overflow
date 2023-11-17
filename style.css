@@ -1,0 +1,30 @@
+:root {
+    /* color variable definitions */
+    --overflow-red: #c72439;
+    --primary: ;
+    --secondary: ;
+    --font-color: ;
+    --shadow-color: ;
+    
+    font-size: 0.625rem;
+
+}
+
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+    /* background-color: var(--overflow-red); */
+    font-size: 1.6rem;
+}
+
+h1 {
+    color: var(--overflow-red);
+    font-size: 3.1rem;
+}
+
