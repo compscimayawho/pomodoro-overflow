@@ -25,21 +25,27 @@ html, body {
     /* background-color: var(--overflow-red); */
     font-size: 1.6rem;
     font-family: 'Archivo Black', sans-serif;
+
+    background: url(./imgs/background-img.jpeg) no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+
 }
 
 h1 {
-    color: var(--overflow-red);
-    font-size: 3.5rem;
+    /* color: var(--overflow-red); */
+    font-size: 3.7rem;
 }
 
 h2 {
-    font-size: 2.9rem;
+    font-size: 3.2rem;
+    color: var(--overflow-red);
 }
 
 h2 span {
     font-size: 1.5rem;
-    margin: 0.5rem ;
-    color: #293744;
+    color: black;
+    margin: 0.5rem;
 }
 
 section {
@@ -152,7 +158,7 @@ section {
 }
 
 .controls button#reset {
-    /* display: none; */
+    display: none;
     background-color: var(--overflow-red); /* Red color for Reset button */
     color: #fff; /* White text color */
 }
