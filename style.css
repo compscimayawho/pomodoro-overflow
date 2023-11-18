@@ -1,13 +1,16 @@
 :root {
     /* color variable definitions */
     --overflow-red: #c72439;
+    --dark-gray: #293744;
+    --light-color: rgba(132, 139, 200, 0.18);
+    --dark-color: #677483;
+
     --primary: ;
     --secondary: ;
     --font-color: ;
     --shadow-color: ;
     
     font-size: 0.625rem;
-
 }
 
 * {
@@ -21,12 +24,22 @@ html, body {
     width: 100vw;
     /* background-color: var(--overflow-red); */
     font-size: 1.6rem;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Archivo Black', sans-serif;
 }
 
 h1 {
     color: var(--overflow-red);
-    font-size: 3.1rem;
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 2.9rem;
+}
+
+h2 span {
+    font-size: 1.5rem;
+    margin: 0.5rem ;
+    color: #293744;
 }
 
 section {
@@ -52,19 +65,24 @@ section {
     flex-wrap: wrap;
     justify-content: space-around;
     text-align: center;
-    width: 20rem;
-    margin: 5rem 2rem 2rem;
+    width: 30rem;
+    margin: 2rem;
     padding: 1rem;
 }
 
 .panel p { 
     opacity: 0.8;
     transition: 1s ease-in-out;
+    width: 6.566rem;
+    margin: auto;
+    padding: 1rem;
+    cursor: pointer;
+    color: var(--dark-gray);
 }
 
 .panel p.active {
     opacity: 1;
-    color: purple;  
+    color: var(--overflow-red);  
 }
 
 
@@ -80,8 +98,8 @@ section {
     justify-content: center;
     align-items: center;
     position: relative;
-    width: 20rem;
-    height: 20rem;
+    width: 20rem; /*60rem*/
+    height: 20rem; /*15rem*/
     /* border-radius: to be set */
     /* background-color: to be set */
 }
@@ -100,10 +118,12 @@ section {
     position: relative;
     display: flex;
     flex-direction: row;
+    margin-bottom: 1rem;
 }
 
 .time p {
-    font-size: 5rem;
+    font-size: 7rem;
+    padding: 1rem;
 }
 
 .time p:nth-of-type(2) {
@@ -117,10 +137,25 @@ section {
 }
 
 .controls button {
-    /* add styles here */
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
     cursor: pointer;
 }
 
+.controls button#start {
+    background-color: #354C72; /* Green color for Start button */
+    color: #fff; /* White text color */
+}
+
 .controls button#reset {
-    display: none;
+    /* display: none; */
+    background-color: var(--overflow-red); /* Red color for Reset button */
+    color: #fff; /* White text color */
+}
+.controls button:hover {
+    filter: brightness(90%); /* Slight brightness reduction on hover for all buttons */
 }
